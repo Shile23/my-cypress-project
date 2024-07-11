@@ -3,7 +3,7 @@ const assertions = require('../../support/assertionsFlare/assertions');
 
 describe('Sum Products Test', () => {
     
-    it('Sum multiple items', () => {
+    it('Sum multiple prices of items', () => {
     
       cy.visit('https://www.saucedemo.com/')
        
@@ -29,7 +29,7 @@ describe('Sum Products Test', () => {
     functions.cartInventoryItemsPrice();
 
     // validiram da su ostale cene tacne 
-    
+
     assertions.verifyCartSubtotal('55.97');
     assertions.verifyCartTax('4.48');
     assertions.verifyCartTotal('60.45');

@@ -49,6 +49,11 @@ class Locators {
     taxPrice = '[data-test="tax-label"]';
     totalPrice = '[data-test="total-label"]';
 
+    // homepage multiple pics
+
+    imageAnyInventoryItem = '.inventory_item_img';
+    
+
 };
 
 module.exports = new Locators();

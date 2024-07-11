@@ -100,6 +100,12 @@ class Assertions {
   verifyCartTotal(expectedTotal) {
     cy.get(locators.totalPrice).should('contain.text', expectedTotal);
   }
+  verifyCartInventoryItemsArePresent() {
+    cy.get(locators.cartInventoryItems).should('exist')
+  }
+  verifyCartInventoryPicturesArePresent() {
+    cy.get(locators.imageAnyInventoryItem).should('be.visible')
+  }
 };
 
 
