@@ -48,8 +48,6 @@ class Assertions {
 
   }
 
-
-
   // homepage images
 
   verifyImageBackpack() {
@@ -76,7 +74,33 @@ class Assertions {
     cy.get(locators.inventoryItemAll).should('have.attr', 'src').and('include', '/static/media/red-tatt-1200x1500.30dadef4.jpg');
   }
 
-}
+  // cart
+
+  verifyCartSuccess() {
+    cy.get(locators.cartSuccess).should('have.text', 'Thank you for your order!');
+  }
+  verifyCartBadgeCount(number) {
+    cy.get(locators.cartBadge).should('have.text', number );
+  }
+  verifyCartBadgeCountNotExist() {
+    cy.get(locators.cartBadge).should('not.exist');
+  }
+  verifyCartInventoryItemsCount(number) {
+    cy.get(locators.cartInventoryItems).should('have.length', number);
+  }
+  verifyCartInventoryItemsCountNotExist() {
+    cy.get(locators.cartInventoryItems).should('not.exist');
+  }
+  verifyCartSubtotal(expectedSubtotal) {
+    cy.get(locators.subtotalPrice).should('contain.text', expectedSubtotal);
+  }
+  verifyCartTax(expectedTax) {
+    cy.get(locators.taxPrice).should('contain.text', expectedTax);
+  }
+  verifyCartTotal(expectedTotal) {
+    cy.get(locators.totalPrice).should('contain.text', expectedTotal);
+  }
+};
 
 
 

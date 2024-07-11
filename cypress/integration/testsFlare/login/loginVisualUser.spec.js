@@ -11,6 +11,7 @@ describe('Login Visual User', () => {
       assertions.verifyUsernameVisuals();
       assertions.verifyPasswordVisuals();
       assertions.verifyLoginButtonVisuals();
-        });
+
+    });
     
   });
