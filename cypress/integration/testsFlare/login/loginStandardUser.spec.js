@@ -15,8 +15,19 @@ describe('Login Standard User', () => {
       functions.typePassword('secret_sauce');
       functions.clickSubmit();
       assertions.verifyUrlContains('https://www.saucedemo.com/inventory.html')
-        });
-        
+
+      // Za standard usera dodajemo validaciju slika koja nije prosla kod problem usera. 
+
+      assertions.verifyImageBackpack()
+      assertions.verifyImageBike()
+      assertions.verifyImageShirt()
+      assertions.verifyImageJacket()
+      assertions.verifyImageOnesie()
+      assertions.verifyImageAll()
+
+      });
+      
+      
     });
 
 

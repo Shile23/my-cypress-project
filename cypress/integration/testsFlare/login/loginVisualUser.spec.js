@@ -8,10 +8,9 @@ describe('Login Visual User', () => {
       cy.visit('https://www.saucedemo.com/');
 
       
-      functions.typeUsername('visual_user');
-      functions.typePassword('secret_sauce');
-      functions.clickSubmit();
-      assertions.verifyUrlContains('https://www.saucedemo.com/inventory.html')
+      assertions.verifyUsernameVisuals();
+      assertions.verifyPasswordVisuals();
+      assertions.verifyLoginButtonVisuals();
         });
     
   });

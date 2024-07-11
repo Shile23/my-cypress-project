@@ -12,6 +12,18 @@ describe('Login Problem User', () => {
       functions.typePassword('secret_sauce');
       functions.clickSubmit();
       assertions.verifyUrlContains('https://www.saucedemo.com/inventory.html')
+
+      // Asertovacu sve slike na stranici koje bi trebalo da se prikazu i test ce pasti
+
+      assertions.verifyImageBackpack()
+      assertions.verifyImageBike()
+      assertions.verifyImageJacket()
+      assertions.verifyImageShirt()
+      assertions.verifyImageOnesie()
+      assertions.verifyImageAll()
+
+      // Slike pitbulla nisu ocekivano ponasanje
+
         });
     
   });
