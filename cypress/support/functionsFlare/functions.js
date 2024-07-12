@@ -70,14 +70,14 @@ class Functions {
 
     cy.get(locators.inventoryItemPrice).then(elements => { // uzimam lokator i cene iz njega
       let prices = [];
-        elements.each((index, element) => {
-          let priceText = Cypress.$(element).text().trim();
+        elements.each((index, element) => {  // iteracija
+          let priceText = Cypress.$(element).text().trim(); 
           let price = parseFloat(priceText.replace('$', '')); // za svaki konvertujem u broj
 
             if (!isNaN(price)) { // utvrdjujem da je broj dobar
                 prices.push(price);
 
-                cy.log(`Found price: ${price}`); // logujem da mi ispise u testu posto nisam siguran
+                cy.log(`Found price: ${price}`); // logujem da mi ispise u testu 
             }
         });
 

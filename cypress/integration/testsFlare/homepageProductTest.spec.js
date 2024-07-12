@@ -18,7 +18,7 @@ describe('Homepage Product Test', () => {
       assertions.verifyCartInventoryPicturesArePresent();
     });
 
-    // da bih bio siguran proci cu jos jednom ali sa "problem" userom da potvrdimo asertaciju
+    // potvrdjujem asertaciju sa 'problem_user' accountom kao additional check
 
     it('Homepage validations with random images 2', () => {
     

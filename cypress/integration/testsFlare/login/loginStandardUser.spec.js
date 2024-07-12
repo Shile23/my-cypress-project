@@ -16,7 +16,7 @@ describe('Login Standard User', () => {
       functions.clickSubmit();
       assertions.verifyUrlContains('https://www.saucedemo.com/inventory.html')
 
-      // Za standard usera dodajemo validaciju slika koja nije prosla kod problem usera. 
+      // Za standard usera dodajemo validaciju slika koja nije prosla kod 'problem_user' scenario. 
 
       assertions.verifyImageBackpack()
       assertions.verifyImageBike()

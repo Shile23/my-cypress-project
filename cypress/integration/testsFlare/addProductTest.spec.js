@@ -25,7 +25,7 @@ describe('Add Product Test', () => {
       assertions.verifyCartBadgeCount(1);
       functions.cartContinueShopping();
 
-      // kart inventory count je jednak badge count-u
+      // kart inventory count je iste vrednosti kao badge count
 
       functions.addToCartBike();
       functions.addToCartShirt();

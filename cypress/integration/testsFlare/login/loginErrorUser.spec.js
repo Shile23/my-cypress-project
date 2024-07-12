@@ -13,7 +13,7 @@ describe('Login Error User', () => {
       assertions.verifyErrorMessageExist();
       assertions.verifyErrorText('Epic sadface: Username and password do not match any user in this service');
       assertions.verifyErrorColor();
-        });
+      });
 
     it('Testing Error User - wrong password', () => {
 
@@ -25,7 +25,7 @@ describe('Login Error User', () => {
       assertions.verifyErrorMessageExist();
       assertions.verifyErrorText('Epic sadface: Username and password do not match any user in this service');
       assertions.verifyErrorColor();
-            });
+    });
 
 
       
