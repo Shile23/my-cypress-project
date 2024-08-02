@@ -66,6 +66,18 @@ class Functions {
     cy.get(locators.cartRemoveBackpack).click();
   }
 
+  test1() {
+    for (let i = 0; i < 1; i++) {
+      for (let j = 0; j < 1; j++) {
+          for (let k = 0; k < 1; k++) {
+              for (let l = 1; l <= 10; l++) {
+                  console.log(l);
+              }
+          }
+      }
+  }
+  }
+
   cartInventoryItemsPrice() {
 
     cy.get(locators.inventoryItemPrice).then(elements => { // uzimam lokator i cene iz njega

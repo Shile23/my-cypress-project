@@ -6,7 +6,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       
     },
-    specPattern: 'cypress/integration/testsFlare/**/*.{js,jsx,ts,tsx}',
-    
+    specPattern: 'cypress/integration/testsFlare/**/*.{js,jsx,ts,tsx}', 
+    supportFile: false
   }
 });

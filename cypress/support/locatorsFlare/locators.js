@@ -52,6 +52,7 @@ class Locators {
     // homepage multiple pics
 
     imageAnyInventoryItem = '.inventory_item_img';
+    tagiAttribute = 'input[type=email]'
     
 
 };
